@@ -7,9 +7,8 @@
 * Open the index.html file.
 
 # Technologies
- ------------ |
-HTML | 
-CSS | 
-Bootstrap |
-Jquery |
+* HTML
+* CSS
+* Bootstrap
+* Jquery
 
