@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+}
+
+.modal.show #modal1.modal.show #modal2.modal.show #modal3.modal.show {
+  padding: 0;
+}
+
+.navbar {
+  background-color: white !important;
+  box-shadow: 0px 3px 6px #0000000f;
+  min-height: 70px;
+  padding: 0 98px;
+}
+
+.navbar-brand img {
+  width: 66px;
+  height: 66px;
+}
+
+#login {
+  width: 134px;
+  height: 38px;
+  color: white;
+  outline: none;
+  border: none;
+  background: #7ecb20;
+  border-radius: 19px;
+  cursor: pointer;
+  margin-left: 26px;
+  font: normal normal 600 16px/22px Open Sans;
+  letter-spacing: 0.48px;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+#login:hover {
+  transform: scale(1.1);
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+#signUp {
+  text-align: center;
+
+  letter-spacing: 0px;
+  color: #7ecb20;
+  border: none;
+  outline: none;
+  background-color: white;
+  margin-left: 26px;
+}
+
+#signUp:hover {
+  color: #7ecb20 !important;
+}
+
+.nav-item {
+  margin-left: 46px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+.navbar-nav .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 66px;
+  line-height: 66px;
+}
+
+.main {
+  padding: 0 179px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.main h1 {
+  font: normal normal bold 41px/56px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.main h2 {
+  font: normal normal normal 28px/38px Open Sans;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-bottom: 48px;
+  opacity: 0.8;
+}
+
+.main button {
+  font: normal normal bold 24px/33px Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  color: white;
+  width: 236px;
+  height: 53px;
+  background: #7ecb20 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  margin-bottom: 150px;
+}
+
+.main button:hover {
+  background: #89dd22 0% 0% no-repeat padding-box;
+}
+
+.modal {
+  width: 100%;
+}
+
+.signupBox {
+  width: 676px;
+  height: 577px;
+  padding: 74px 170px 128px 170px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signupBox h1 {
+  font: normal normal 600 33px/44px Segoe UI;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.signupBox h2 {
+  font: normal normal normal 22px/30px Open Sans;
+  letter-spacing: 0px;
+  color: #212020;
+  margin-bottom: 52px;
+}
+
+.signupBox a {
+  font: normal normal 600 22px/30px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  width: 336px;
+  height: 48px;
+  background: #7ecb20 0% 0% no-repeat padding-box;
+}
+
+.signupBox a:hover {
+  color: white;
+}
+
+.signupBox #close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.otpBox {
+  width: 676px;
+  height: 577px;
+  padding: 158px 170px 158px 170px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.otpBox h1 {
+  font: normal normal 600 22px/30px Segoe UI;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-bottom: 45px;
+}
+
+.otpBox h6 {
+  text-align: left;
+  font: normal normal normal 14px/19px Segoe UI;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.otpBox a {
+  font: normal normal 600 22px/30px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  width: 336px;
+  height: 48px;
+  background: #7ecb20 0% 0% no-repeat padding-box;
+}
+
+.otpBox a:hover {
+  color: white;
+}
+
+.otpBox input {
+  height: 63px;
+  font: normal normal normal 22px Segoe UI;
+  letter-spacing: 0px;
+  color: #000000;
+  padding-left: 40px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 32px;
+}
+
+.otpBox input::placeholder {
+  color: black;
+}
+
+.otpBox #close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.successBox {
+  width: 676px;
+  height: 577px;
+  padding: 158px 170px 158px 170px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 15px;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.successBox img {
+  margin-top: 60px;
+}
+
+.successBox h4 {
+  margin-top: 35px;
+  text-align: center;
+  font: normal normal 600 22px/30px Segoe UI;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+
+  padding-top: 60px 24px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav h1 {
+  text-align: center;
+  font: normal normal bold 24px/32px Segoe UI;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.sidebarBackdrop {
+  display: block;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.loginBox {
+  padding: 24px;
+}
+
+.studentBox {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(112, 112, 112, 0.32);
+
+  padding: 22px 16px;
+}
+
+.studentBox h1 {
+  text-align: center;
+  font: normal normal 600 20px/27px Segoe UI;
+  letter-spacing: 0px;
+  color: #7ecb20;
+}
+
+.studentBox h6 {
+  margin: 18px 0;
+  text-align: right;
+  font: normal normal 600 15px/20px Segoe UI;
+  letter-spacing: 0px;
+  color: #7ecb20;
+}
+
+.studentBox #loginBtn {
+  padding: 8px;
+  text-align: center;
+  font: normal normal 600 22px/30px Segoe UI;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  width: 336px;
+  height: 48px;
+  background: #7ecb20 0% 0% no-repeat padding-box;
+}
+
+#loginBtn:hover {
+  background: #89dd22 0% 0% no-repeat padding-box;
+}
+
+.studentBox #loginBtn:hover {
+  color: white;
+}
+
+#newSignup {
+  margin-top: 18px;
+  text-align: center;
+  font: normal normal 600 16px/21px Segoe UI;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1200px) {
+  #dash {
+    display: none;
+  }
+
+  .modal-content {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+  }
+  #signUp {
+    margin-left: 0;
+  }
+
+  #login {
+    margin-bottom: 10px !important;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 24px;
+  }
+
+  .main {
+    padding: 0 60px;
+  }
+
+  .signupBox {
+    width: 400px;
+    height: 450px;
+    padding: 25px;
+  }
+
+  .otpBox a {
+    width: 310px;
+    height: 48px;
+  }
+  .otpBox {
+    width: 400px;
+    height: 450px;
+    padding: 75px 50px;
+  }
+
+  .successBox {
+    width: 400px;
+    height: 450px;
+    padding: 60px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main {
+    margin-top: 100px;
+    padding: 0 36px;
+  }
+
+  .main h1 {
+    font-size: 36px;
+  }
+
+  .main h2 {
+    font-size: 24px;
+  }
+
+  .otpBox a {
+    width: 250px;
+    height: 48px;
+  }
+  .otpBox {
+    width: 350px;
+    height: 450px;
+    padding: 75px 50px;
+  }
+
+  .successBox {
+    width: 350px;
+    height: 450px;
+    padding: 75px;
+  }
+
+  .signupBox {
+    width: 350px;
+    height: 450px;
+    padding: 15px;
+  }
+
+  .signupBox h1 {
+    font-size: 20px;
+  }
+
+  .signupBox h2 {
+    font-size: 14px;
+    margin-bottom: 26px;
+  }
+  .signupBox a {
+    font-size: 20px;
+    width: 320px;
+    height: 42px;
+  }
+}

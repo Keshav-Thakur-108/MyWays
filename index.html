@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
+        integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+        crossorigin="anonymous" />
+    <title>MyWays</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./Stylesheets/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script defer src="./JS/index.js"></script>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./Assets/Images/MyWays Logo.png" >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end  " id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        For you
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Find matching internships</a>
+                        <a class="dropdown-item" href="#">Hire right talent</a>
+                        <a class="dropdown-item" href="#">Work from Home</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <img id="dash" src="./Assets/Images/Instant logo.png" alt="" width="32px"
+                            height="32px"> Instant Apply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <button data-toggle="modal" data-target="#modal1" class="nav-link" id="signUp">SIGN UP</button>
+                </li>
+
+
+            </ul>
+            <button onclick="openNav()" id="login" class="btn btn-outline-success my-2 my-sm-0"
+                type="submit">Login</button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main">
+            <h1>Apply and hear back every time</h1>
+            <h2>Exploring internships or jobs? Say good-bye to the typical job portals and use the power of Artificial
+                Intelligence to
+                become successful, faster.</h2>
+            <button type="button" data-toggle="modal" data-target="#modal1">Get Started</button>
+        </div>
+
+    </section>
+
+    <!-- Modal1 -->
+    <div class="modal " id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog .modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+               
+                    <div class="signupBox">
+                        <h1>Sign Up</h1>
+                        <h2>It's quick and easy</h2>
+                        <form action="modal2">
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+
+                                    <input type="text" class="form-control" id="validationDefault01"
+                                        placeholder="First name" value="" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+
+                                    <input type="text" class="form-control" id="validationDefault02"
+                                        placeholder="Last name" value="" required>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+
+                                    <input type="text" class="form-control" id="validationDefault03" placeholder="City"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+
+                                    <input type="password" class="form-control" id="validationDefault03"
+                                        placeholder="Password" required>
+                                </div>
+                            </div>
+                            <a class="btn" href="#modal2" data-toggle="modal" data-dismiss="modal">Sign Up</a>
+                        </form>
+                        <button id="close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal2 -->
+    <div class="modal " id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog .modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+           
+                    <div class="otpBox">
+                        <h1>OTP sent!</h1>
+                        <form>
+
+                            <div class="form-row">
+                                <div class="col-md-12 mb-3">
+                                    <input type="text" class="form-control" id="validationDefault03"
+                                        placeholder="Enter your OTP" required>
+                                </div>
+                            </div>
+                            <h6>One time Passcode sent to your email ID- abc@gmail.com</h6>
+                            <a class="btn" href="#modal3" data-toggle="modal" data-dismiss="modal">Enter</a>
+                        </form>
+
+                        <button id="close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <img src="./Assets/Images/Icon material-arrow_back.svg" />
+                        </button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal3 -->
+    <div class="modal " id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog .modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content">
+        
+                    <div class="successBox">
+                        <img src="./Assets/Images/Icon awesome-check-circle.svg">
+                        <h4>Thanks. Successful!</h4>
+                    </div>
+          
+            </div>
+        </div>
+    </div>
+
+    <!--Backdrop for Sidebar-->
+    <div class="sidebarBackdrop">
+
+    </div>
+
+    <!--Sidebar-->
+    <div id="mySidenav" class="sidenav">
+        <div class="loginBox">
+            <div style="display: flex; flex-flow: row; margin-bottom: 73px; justify-content: space-between;">
+                <h1>Login</h1>
+                <h1 class=".closebtn" style="cursor: pointer;" onclick="closeNav()">&times;</h1>
+            </div>
+            <div class="studentBox">
+
+                <h1>Student</h1>
+                <hr>
+                <form>
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <h6>Forgot Password?</h6>
+                    <a onclick="closeNav()" id="loginBtn" class="btn" href="#modal3" data-toggle="modal"
+                        data-dismiss="modal">Login</a>
+                </form>
+                <a onclick="closeNav()" id="newSignup" href="#modal1" data-toggle="modal" data-dismiss="modal">New to
+                    MyWays? Sign Up herer</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
